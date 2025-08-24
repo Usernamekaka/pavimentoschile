@@ -7,46 +7,13 @@
   <meta name="description" content="Pavimento de hormigón y asfalto, bases y sub-bases, canchas, fundaciones, impermeabilización y tratamientos asfálticos en Chile.">
   <link rel="icon" href="assets/img/descarga.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Estilos específicos de esta página para la grilla de servicios -->
-  <style>
-    /* Servicios: imágenes grandes en grilla uniforme y sin captions */
-    .svc-section{margin:48px 0}
-    .svc-section h2{margin:0 0 20px; font-size:1.6rem}
-    .svc-grid{
-      display:grid;
-      gap:22px;
-      grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
-    }
-    .svc-card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:14px;
-      overflow:hidden;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-    .svc-card img{
-      width:100%;
-      height:300px;          /* altura uniforme y grande */
-      object-fit:cover;      /* llena sin deformar */
-      display:block;
-      border-radius:12px;
-      transition:transform .25s ease;
-    }
-    .svc-card img:hover{ transform:scale(1.03); }
-
-    /* Mapa dentro del card de contacto */
-    .contact-map{margin-top:16px}
-    .contact-map iframe{width:100%; height:300px; border:0; border-radius:12px}
-  </style>
 </head>
 <body>
-  <!-- Navbar (usa tu style.css actualizado con el fix de sticky y color) -->
+  <!-- Header -->
   <header class="site-head container">
-    <a class="brand" href="index.html">Pavimentos<span>Chile</span></a>
-    <nav class="nav">
+    <a class="brand" href="index.html" aria-label="Volver al inicio">Pavimentos<span>Chile</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="index.html#trabajos">Proyectos</a>
@@ -65,9 +32,9 @@
     <section id="hormigon" class="svc-section">
       <h2>Pavimento de hormigón</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/hormigon2-1.jpg" alt="Pavimento de hormigón"></div>
-        <div class="svc-card"><img src="assets/img/hormigon2-2.jpg" alt="Pavimento de hormigón"></div>
-        <div class="svc-card"><img src="assets/img/hormigon2-3.jpg" alt="Pavimento de hormigón"></div>
+        <div class="svc-card"><img src="assets/img/hormigon2-1.jpg" alt="Pavimento de hormigón 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/hormigon2-2.jpg" alt="Pavimento de hormigón 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/hormigon2-3.jpg" alt="Pavimento de hormigón 3" loading="lazy"></div>
       </div>
     </section>
 
@@ -75,9 +42,9 @@
     <section id="asfalto" class="svc-section">
       <h2>Pavimento asfáltico</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/asfalticos-1.jpg" alt="Pavimento asfáltico"></div>
-        <div class="svc-card"><img src="assets/img/asfalticos-2.jpg" alt="Pavimento asfáltico"></div>
-        <div class="svc-card"><img src="assets/img/asfalticos-3.jpg" alt="Pavimento asfáltico"></div>
+        <div class="svc-card"><img src="assets/img/asfalticos-1.jpg" alt="Pavimento asfáltico 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/asfalticos-2.jpg" alt="Pavimento asfáltico 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/asfalticos-3.jpg" alt="Pavimento asfáltico 3" loading="lazy"></div>
       </div>
     </section>
 
@@ -85,9 +52,9 @@
     <section id="bases" class="svc-section">
       <h2>Bases y sub-bases</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/bases2-1.jpg" alt="Bases y sub-bases"></div>
-        <div class="svc-card"><img src="assets/img/bases2-2.jpg" alt="Bases y sub-bases"></div>
-        <div class="svc-card"><img src="assets/img/bases2-3.jpg" alt="Bases y sub-bases"></div>
+        <div class="svc-card"><img src="assets/img/bases2-1.jpg" alt="Bases y sub-bases 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/bases2-2.jpg" alt="Bases y sub-bases 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/bases2-3.jpg" alt="Bases y sub-bases 3" loading="lazy"></div>
       </div>
     </section>
 
@@ -95,9 +62,9 @@
     <section id="canchas" class="svc-section">
       <h2>Canchas y centros deportivos</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/canchas-1.jpg" alt="Canchas y centros deportivos"></div>
-        <div class="svc-card"><img src="assets/img/canchas-2.jpg" alt="Canchas y centros deportivos"></div>
-        <div class="svc-card"><img src="assets/img/canchas-3.jpg" alt="Canchas y centros deportivos"></div>
+        <div class="svc-card"><img src="assets/img/canchas-1.jpg" alt="Cancha o centro deportivo 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/canchas-2.jpg" alt="Cancha o centro deportivo 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/canchas-3.jpg" alt="Cancha o centro deportivo 3" loading="lazy"></div>
       </div>
     </section>
 
@@ -105,9 +72,9 @@
     <section id="fundaciones" class="svc-section">
       <h2>Fundaciones</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/fundaciones-1.jpg" alt="Fundaciones"></div>
-        <div class="svc-card"><img src="assets/img/fundaciones-2.jpg" alt="Fundaciones"></div>
-        <div class="svc-card"><img src="assets/img/fundaciones-3.jpg" alt="Fundaciones"></div>
+        <div class="svc-card"><img src="assets/img/fundaciones-1.jpg" alt="Fundaciones 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/fundaciones-2.jpg" alt="Fundaciones 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/fundaciones-3.jpg" alt="Fundaciones 3" loading="lazy"></div>
       </div>
     </section>
 
@@ -115,9 +82,9 @@
     <section id="imper" class="svc-section">
       <h2>Impermeabilización de losas</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/imper-1.jpg" alt="Impermeabilización de losas"></div>
-        <div class="svc-card"><img src="assets/img/imper-2.jpg" alt="Impermeabilización de losas"></div>
-        <div class="svc-card"><img src="assets/img/imper-3.jpg" alt="Impermeabilización de losas"></div>
+        <div class="svc-card"><img src="assets/img/imper-1.jpg" alt="Impermeabilización de losas 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/imper-2.jpg" alt="Impermeabilización de losas 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/imper-3.jpg" alt="Impermeabilización de losas 3" loading="lazy"></div>
       </div>
     </section>
 
@@ -125,23 +92,52 @@
     <section id="tratamientos" class="svc-section">
       <h2>Tratamientos asfálticos</h2>
       <div class="svc-grid">
-        <div class="svc-card"><img src="assets/img/tratamiento-1.jpg" alt="Tratamientos asfálticos"></div>
-        <div class="svc-card"><img src="assets/img/tratamiento-2.jpg" alt="Tratamientos asfálticos"></div>
-        <div class="svc-card"><img src="assets/img/tratamiento-3.jpg" alt="Tratamientos asfálticos"></div>
+        <div class="svc-card"><img src="assets/img/tratamiento-1.jpg" alt="Tratamientos asfálticos 1" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/tratamiento-2.jpg" alt="Tratamientos asfálticos 2" loading="lazy"></div>
+        <div class="svc-card"><img src="assets/img/tratamiento-3.jpg" alt="Tratamientos asfálticos 3" loading="lazy"></div>
       </div>
     </section>
 
-    <!-- CONTACTO (correo + WhatsApp + mapa en el mismo card) -->
-    <section class="grid contact-grid" id="contacto">
+    <!-- CONTACTO + FORM -->
+    <section class="grid contact-grid" id="contacto" aria-label="Contacto">
       <div class="card">
         <div class="card-body">
-          <h3>Contacto</h3>
-          <p><strong>Email:</strong> <a href="mailto:jpjulio@chilepavimentos.cl">jpjulio@chilepavimentos.cl</a></p>
-          <p><a class="btn" href="https://wa.me/56942815366?text=Hola%20Chilepavimentos%2C%20quisiera%20cotizar%20un%20proyecto." target="_blank" rel="noopener">WhatsApp</a></p>
+          <h3>Contáctanos</h3>
+          <p class="help">Completa el formulario o escríbenos por WhatsApp.</p>
+
+          <!-- Formulario -->
+          <form class="form" action="https://formspree.io/f/tu-endpoint" method="POST">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" placeholder="+56 9 1234 5678">
+            </div>
+            <div class="field">
+              <label for="correo">Correo electrónico</label>
+              <input id="correo" name="correo" type="email" placeholder="tunombre@correo.com" required>
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos tu proyecto" required></textarea>
+            </div>
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+
+          <!-- WhatsApp -->
+          <p class="mt-2">
+            <a class="btn outline" href="https://wa.me/56942815366?text=Hola%20Chilepavimentos%2C%20quisiera%20cotizar%20un%20proyecto." target="_blank" rel="noopener">
+              📱 Contactar por WhatsApp
+            </a>
+          </p>
+
+          <!-- Mapa -->
           <div class="contact-map">
             <iframe
               src="https://www.google.com/maps?q=6+1/2+Oriente+270,+Vi%C3%B1a+del+Mar,+Chile&output=embed"
-              allowfullscreen=""
+              allowfullscreen
               loading="lazy">
             </iframe>
           </div>
@@ -151,9 +147,24 @@
   </main>
 
   <footer class="site-foot container">
-    <p>&copy; 2025 Chilepavimentos SPA ·
+    <p>&copy; <span id="year"></span> Chilepavimentos SPA ·
       <a href="mailto:jpjulio@chilepavimentos.cl">jpjulio@chilepavimentos.cl</a>
     </p>
   </footer>
+
+  <!-- Script: menú hamburguesa y año automático -->
+  <script>
+    (function(){
+      var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+      var t=document.querySelector('.nav-toggle');
+      var m=document.querySelector('.nav');
+      if(!t||!m) return;
+      t.addEventListener('click', function(){
+        var open=t.getAttribute('aria-expanded')==='true';
+        t.setAttribute('aria-expanded', String(!open));
+        m.classList.toggle('open');
+      });
+    })();
+  </script>
 </body>
 </html>
