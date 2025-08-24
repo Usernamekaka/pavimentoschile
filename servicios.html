@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nuestros servicios | Chilepavimentos SPA</title>
+  <meta name="description" content="Pavimento de hormigón y asfalto, bases y sub-bases, canchas, fundaciones, impermeabilización y tratamientos asfálticos en Chile.">
+  <link rel="icon" href="assets/img/descarga.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Estilos específicos de esta página para la grilla de servicios -->
+  <style>
+    /* Servicios: imágenes grandes en grilla uniforme y sin captions */
+    .svc-section{margin:48px 0}
+    .svc-section h2{margin:0 0 20px; font-size:1.6rem}
+    .svc-grid{
+      display:grid;
+      gap:22px;
+      grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
+    }
+    .svc-card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .svc-card img{
+      width:100%;
+      height:300px;          /* altura uniforme y grande */
+      object-fit:cover;      /* llena sin deformar */
+      display:block;
+      border-radius:12px;
+      transition:transform .25s ease;
+    }
+    .svc-card img:hover{ transform:scale(1.03); }
+
+    /* Mapa dentro del card de contacto */
+    .contact-map{margin-top:16px}
+    .contact-map iframe{width:100%; height:300px; border:0; border-radius:12px}
+  </style>
+</head>
+<body>
+  <!-- Navbar (usa tu style.css actualizado con el fix de sticky y color) -->
+  <header class="site-head container">
+    <a class="brand" href="index.html">Pavimentos<span>Chile</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="index.html#trabajos">Proyectos</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a class="btn" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header class="section-head">
+      <h1>Nuestros servicios</h1>
+      <p style="color:#9aa3ad">Soluciones integrales para obras industriales, comerciales y urbanas en todo Chile.</p>
+    </header>
+
+    <!-- HORMIGÓN -->
+    <section id="hormigon" class="svc-section">
+      <h2>Pavimento de hormigón</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/hormigon2-1.jpg" alt="Pavimento de hormigón"></div>
+        <div class="svc-card"><img src="assets/img/hormigon2-2.jpg" alt="Pavimento de hormigón"></div>
+        <div class="svc-card"><img src="assets/img/hormigon2-3.jpg" alt="Pavimento de hormigón"></div>
+      </div>
+    </section>
+
+    <!-- ASFÁLTICOS -->
+    <section id="asfalto" class="svc-section">
+      <h2>Pavimento asfáltico</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/asfalticos-1.jpg" alt="Pavimento asfáltico"></div>
+        <div class="svc-card"><img src="assets/img/asfalticos-2.jpg" alt="Pavimento asfáltico"></div>
+        <div class="svc-card"><img src="assets/img/asfalticos-3.jpg" alt="Pavimento asfáltico"></div>
+      </div>
+    </section>
+
+    <!-- BASES Y SUB-BASES -->
+    <section id="bases" class="svc-section">
+      <h2>Bases y sub-bases</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/bases2-1.jpg" alt="Bases y sub-bases"></div>
+        <div class="svc-card"><img src="assets/img/bases2-2.jpg" alt="Bases y sub-bases"></div>
+        <div class="svc-card"><img src="assets/img/bases2-3.jpg" alt="Bases y sub-bases"></div>
+      </div>
+    </section>
+
+    <!-- CANCHAS -->
+    <section id="canchas" class="svc-section">
+      <h2>Canchas y centros deportivos</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/canchas-1.jpg" alt="Canchas y centros deportivos"></div>
+        <div class="svc-card"><img src="assets/img/canchas-2.jpg" alt="Canchas y centros deportivos"></div>
+        <div class="svc-card"><img src="assets/img/canchas-3.jpg" alt="Canchas y centros deportivos"></div>
+      </div>
+    </section>
+
+    <!-- FUNDACIONES -->
+    <section id="fundaciones" class="svc-section">
+      <h2>Fundaciones</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/fundaciones-1.jpg" alt="Fundaciones"></div>
+        <div class="svc-card"><img src="assets/img/fundaciones-2.jpg" alt="Fundaciones"></div>
+        <div class="svc-card"><img src="assets/img/fundaciones-3.jpg" alt="Fundaciones"></div>
+      </div>
+    </section>
+
+    <!-- IMPERMEABILIZACIÓN -->
+    <section id="imper" class="svc-section">
+      <h2>Impermeabilización de losas</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/imper-1.jpg" alt="Impermeabilización de losas"></div>
+        <div class="svc-card"><img src="assets/img/imper-2.jpg" alt="Impermeabilización de losas"></div>
+        <div class="svc-card"><img src="assets/img/imper-3.jpg" alt="Impermeabilización de losas"></div>
+      </div>
+    </section>
+
+    <!-- TRATAMIENTOS ASFÁLTICOS -->
+    <section id="tratamientos" class="svc-section">
+      <h2>Tratamientos asfálticos</h2>
+      <div class="svc-grid">
+        <div class="svc-card"><img src="assets/img/tratamiento-1.jpg" alt="Tratamientos asfálticos"></div>
+        <div class="svc-card"><img src="assets/img/tratamiento-2.jpg" alt="Tratamientos asfálticos"></div>
+        <div class="svc-card"><img src="assets/img/tratamiento-3.jpg" alt="Tratamientos asfálticos"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO (correo + WhatsApp + mapa en el mismo card) -->
+    <section class="grid contact-grid" id="contacto">
+      <div class="card">
+        <div class="card-body">
+          <h3>Contacto</h3>
+          <p><strong>Email:</strong> <a href="mailto:jpjulio@chilepavimentos.cl">jpjulio@chilepavimentos.cl</a></p>
+          <p><a class="btn" href="https://wa.me/56942815366?text=Hola%20Chilepavimentos%2C%20quisiera%20cotizar%20un%20proyecto." target="_blank" rel="noopener">WhatsApp</a></p>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps?q=6+1/2+Oriente+270,+Vi%C3%B1a+del+Mar,+Chile&output=embed"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot container">
+    <p>&copy; 2025 Chilepavimentos SPA ·
+      <a href="mailto:jpjulio@chilepavimentos.cl">jpjulio@chilepavimentos.cl</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pavimentos Chile</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">Pavimentos<span>Chile</span></a>
+      <nav class="nav" id="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Nuestros trabajos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a class="active btn btn--sm" href="contacto.html">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Chilepavimentos spa es una empresa familiar con más de 9 años en proyectos de pavimentación y obras civiles</h1>
+    <p>Completa el formulario y te contactaremos para coordinar tu visita técnica.</p>
+    <form class="form" onsubmit="event.preventDefault(); alert('¡Gracias! Te contactaremos pronto.');">
+      <div class="grid form-grid">
+        <label>Nombre
+          <input type="text" required>
+        </label>
+        <label>Empresa
+          <input type="text">
+        </label>
+        <label>Email
+          <input type="email" required>
+        </label>
+        <label>Teléfono
+          <input type="tel" required>
+        </label>
+        <label>Comuna
+          <input type="text">
+        </label>
+        <label>Tipo de obra
+          <select>
+            <option value="">Selecciona…</option>
+            <option>Hormigón</option>
+            <option>Asfalto</option>
+            <option>Bases y sub-bases</option>
+            <option>Mantenimiento</option>
+          </select>
+        </label>
+        <label>Superficie aprox. (m²)
+          <input type="number" min="0" step="1">
+        </label>
+      </div>
+      <label>Mensaje
+        <textarea rows="5" placeholder="Cuéntanos tu proyecto"></textarea>
+      </label>
+      <div class="actions">
+        <button type="submit" class="btn">Enviar</button>
+        <a class="btn btn--ghost" href="https://wa.me/+56 9 4281 5366" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal">
+      <small>© <span id="year"></span> PavimentosPRO</small>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
